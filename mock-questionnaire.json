@@ -1,0 +1,103 @@
+{
+    "id": 7,
+    "questionnaire": {
+        "meta": {
+            "name": "HEXACO-PI-R (Self-Report Form)",
+            "language": "en",
+            "authors": "Kibeom Lee, Ph.D., & Michael C. Ashton, Ph.D.",
+            "description": "..",
+            "type": "static",
+            "version": 1.0
+        },
+        "content": {
+            "sequence": [
+                {
+                    "sequence_id": 1,
+                    "type": "question",
+                    "data": {
+                        "question_id": 1,
+                        "text": "What's your lucky number?",
+                        "answer_type": "single_choice_integer",
+                        "answer_config": {
+                            "options": {
+                                "1": 1,
+                                "2": 2,
+                                "3": 3,
+                                "4": 4,
+                                "5": 5
+                            }
+                        },
+                        "answer": null
+                    }
+                },
+                {
+                    "sequence_id": 2,
+                    "type": "question",
+                    "data": {
+                        "question_id": 7,
+                        "text": "What is your least favorit number?",
+                        "answer_type": "integer",
+                        "answer_config": {
+                            "min": 0
+                        },
+                        "answer": null
+                    }
+                },
+                {
+                    "sequence_id": 4,
+                    "type": "question",
+                    "data": {
+                        "question_id": 1,
+                        "text": "What is your spirit animal?",
+                        "answer_type": "text",
+                        "answer_config": {
+                            "min_length": 0,
+                            "max_length": 100
+                        },
+                        "answer": null
+                    }
+                },
+
+                {
+                    "sequence_id": 5,
+                    "type": "video",
+                    "data": {
+                       "video_id": 1,
+                       "description" :"Introducing Chromecast. The easiest way to enjoy online video and music on your TV—for when you want to make Buster's big meltdowns even bigger. For $35. Learn how to use Chromecast with Netflix and more at google.com/chromecast.", 
+                       "sources" : [ "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4" ],
+                       "subtitle" : "By Google",
+                       "thumb" : "images/ForBiggerMeltdowns.jpg",
+                       "title" : "For Bigger Meltdowns"
+                     }
+                },
+                
+                {
+                    "sequence_id": 6,
+                    "type": "question",
+                    "data": {
+                        "question_id": 8,
+                        "text": "How much Ice Cream have you eaten in the last 3 years?",
+                        "answer_type": "pairs",
+                        "answer_config": {
+                            "key": {
+                                "contentType": "year",
+                                "min": 2000,
+                                "max": 2030,
+                                "step": 1
+                            },
+                            "value": {
+                                "type": "integer",
+                                "min": 0,
+                                "step": 1
+                            },
+                            "min_length": 3,
+                            "max_length": 3
+                        },
+                        "answer": null
+                    }
+                },
+
+            ]
+        }
+    }
+}
